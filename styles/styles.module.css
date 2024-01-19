@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cherry+Bomb+One&family=Prompt:wght@700&display=swap');
+.titulos{
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  text-align: center;
+  margin-top: 15px;
+}
+.navbar{
+background-color: #343a40;
+padding: 10px 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.navbarBrand{
+color: #ffffff;
+font: 1.5rem;
+text-decoration: none;
+
+}
+
+.navbarNav{
+    list-style: none;
+    display: flex;
+    font-family: 'Prompt', sans-serif;
+}
+
+.navItem{
+margin-left: 20px;
+}
+
+.navLink{
+color: #ffffff;
+text-decoration: none;
+font-size: 20px;
+font-family: 'Bebas Neue', sans-serif;
+}
+
+.content{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer{
+  background-color: #56595d;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.info{
+    padding-top: 20px;
+    margin-bottom: 40px;
+     justify-content: center;
+    align-items: center;
+  }
+  .roundedImage {
+    overflow: hidden;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+  }
+  
+  .roundedImage:hover {
+    transform: scale(1.1);
+  }
