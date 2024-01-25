@@ -8,7 +8,6 @@ export default function Home() {
   return (
     <div className={styles.content}>
       {/* Contenido principal */}
-      <h1 className={styles.h1Pri}>Formulario</h1>
     <div>
     <IndexPage />
     </div>

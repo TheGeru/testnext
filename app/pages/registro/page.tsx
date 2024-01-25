@@ -8,7 +8,6 @@ const App = () => {
     return (
       <div>
         <Registro onClose={handleClose} />
-        {/* Otro contenido de la aplicación */}
       </div>
     );
   };
