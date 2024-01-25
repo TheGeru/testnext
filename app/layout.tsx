@@ -1,6 +1,9 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+import './globals.css'
+import Link from 'next/link'
+import styles from '@/styles/styles.module.css';
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,12 +14,28 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+      <nav className={styles.navbar}>
+      <Link href="/" className={styles.navbarBrand}>Home</Link>
+      <ul className={styles.navbarNav}>
+        <li className={styles.navItem}>
+          <Link href="/pages/ayuda" className={styles.navLink}>Ayuda</Link>
+        </li>
+        <li className={styles.navItem}>
+          <Link href="/pages/contacto" className={styles.navLink}>Contacto</Link>
+        </li>
+        <li className={styles.navItem}>
+          <Link href="/pages/sesion" className={styles.navLink}>Sesion</Link>
+        </li>
+      </ul>
+    </nav>
+        {children}
+        </body>
     </html>
-  );
+  )
 }
