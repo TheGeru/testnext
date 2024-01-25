@@ -1,11 +1,11 @@
-import styles from "@/styles/styles.module.css";
+import Link from 'next/link'
 
-const Ayuda =()=>{
-    return(
-        <div>
-            <h1 className={styles.titulos}>Bienvenido al sisteme de Ayuda, en que podemos ayudarte?</h1>
-        </div>
+export default function Ayuda() {
+    return (
+        <main>
+            <h1 className="text-4xl font-bold">
+                Pagina de ayuda
+            </h1>
+        </main>
     )
 }
-
-export default Ayuda;

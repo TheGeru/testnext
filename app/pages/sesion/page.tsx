@@ -1,11 +1,11 @@
-import styles from "@/styles/styles.module.css";
+import Link from 'next/link'
 
-const Sesion =()=>{
-    return(
-        <div>
-            <h1 className={styles.titulos}>Estas en la pagina de sesion</h1>
-        </div>
+export default function Sesion() {
+    return (
+        <main>
+            <h1 className="text-4xl font-bold">
+                Pagina de sesion
+            </h1>
+        </main>
     )
 }
-
-export default Sesion;
