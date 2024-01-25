@@ -27,9 +27,6 @@ export default function RootLayout({
           <Link href="/pages/ayuda" className={styles.navLink}>Ayuda</Link>
         </li>
         <li className={styles.navItem}>
-          <Link href="/pages/contacto" className={styles.navLink}>Contacto</Link>
-        </li>
-        <li className={styles.navItem}>
           <Link href="/pages/sesion" className={styles.navLink}>Sesion</Link>
         </li>
       </ul>

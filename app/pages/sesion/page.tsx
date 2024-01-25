@@ -4,7 +4,7 @@ export default function Sesion() {
     return (
         <main>
             <h1 className="text-4xl font-bold">
-                Pagina de sesion
+                Estas en la pagina de sesion
             </h1>
         </main>
     )
