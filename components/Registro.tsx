@@ -3,7 +3,11 @@ import Link from "next/link";
 import { useState } from "react";
 import formStyle from "../styles/formStyle.module.css"
 
-const Registro = ({onClose}) =>{
+type RegisterProps = {
+    onClose: () => void;
+  };
+
+  const Registro: React.FC<RegisterProps> = ({ onClose }) =>{
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const handledRegister = () =>{

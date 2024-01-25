@@ -1,7 +1,16 @@
-import Register from '@/components/Registro';
+import Registro from '@/components/Registro';
 
-export default function Page(){
-    return(
-        <Register/>
-    )
-} 
+const App = () => {
+    const handleClose = () => {
+      console.log("Cerrar");
+    };
+  
+    return (
+      <div>
+        <Registro onClose={handleClose} />
+        {/* Otro contenido de la aplicación */}
+      </div>
+    );
+  };
+  
+  export default App;
